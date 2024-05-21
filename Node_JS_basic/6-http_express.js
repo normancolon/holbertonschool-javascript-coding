@@ -1,5 +1,5 @@
-// 6-http_express.js
 const express = require('express');
+
 const app = express();
 const port = 1245;
 
@@ -8,8 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+  // console.log(`Example app listening at http://localhost:${port}`);
 });
 
 module.exports = app;
-
