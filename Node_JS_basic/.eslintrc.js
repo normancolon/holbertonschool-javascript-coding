@@ -1,18 +1,17 @@
 module.exports = {
-  env: {
-    node: true,
-    es6: true,
-    jest: true
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:jest/recommended'
-  ],
-  parserOptions: {
-    ecmaVersion: 2018
-  },
-  rules: {
-    // Customize your rules
-  }
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true // This ensures that Node.js global variables are recognized
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        // Add any custom rules here
+    }
 };
-
